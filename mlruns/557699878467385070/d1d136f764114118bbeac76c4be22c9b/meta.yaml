@@ -1,0 +1,14 @@
+artifact_uri: file:D:/Mlops_tutor/mlops-mini-project/mlruns/557699878467385070/d1d136f764114118bbeac76c4be22c9b/artifacts
+end_time: 1777401091173
+entry_point_name: ''
+experiment_id: '557699878467385070'
+lifecycle_stage: active
+run_id: d1d136f764114118bbeac76c4be22c9b
+run_name: bright-squid-862
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777401048754
+status: 3
+tags: []
+user_id: swaro

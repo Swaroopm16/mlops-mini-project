@@ -1,0 +1,14 @@
+artifact_uri: file:D:/Mlops_tutor/mlops-mini-project/mlruns/557699878467385070/86031483a4d84bfc967a4c522b42935d/artifacts
+end_time: 1777401187814
+entry_point_name: ''
+experiment_id: '557699878467385070'
+lifecycle_stage: active
+run_id: 86031483a4d84bfc967a4c522b42935d
+run_name: peaceful-chimp-419
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777401180011
+status: 3
+tags: []
+user_id: swaro

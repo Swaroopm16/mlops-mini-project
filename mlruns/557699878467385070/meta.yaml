@@ -1,0 +1,7 @@
+artifact_location: file:D:/Mlops_tutor/mlops-mini-project/mlruns/557699878467385070
+creation_time: 1777400972352
+experiment_id: '557699878467385070'
+last_update_time: 1777400972352
+lifecycle_stage: active
+name: dvc-pipeline
+workspace: default
