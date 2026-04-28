@@ -1,0 +1,22 @@
+<!-- all the code of the web should be inide the templates folder of the flask app -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analysis</title>
+</head>
+<body>
+  <h1>Sentiment Analysis</h1>
+  <form action="/predict" method="POST">
+      <label>Write text:</label>
+      <textarea name="text" rows="10" cols="50">{{ original_text or "" }}</textarea>
+      <br>
+      <input type="submit" value="Predict">
+  </form>
+  {% if prediction %}
+  <h2>Result: {{ prediction }}</h2>
+  <p><strong>Cleaned text:</strong> {{ cleaned_text }}</p>
+  {% endif %}
+</body>
+</html>
