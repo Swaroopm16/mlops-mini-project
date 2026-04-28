@@ -15,10 +15,6 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install DVC
-        run: |
-        pip install dvc
-
       - name: Cache pip dependencies
         uses: actions/cache@v3
         with:
@@ -31,13 +27,6 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Install DVC
-        run: |
-          pip install dvc
-
-      - name: run pipeline
-        run: dvc repro
 
       - name: set DagsHub MLflow credentials
         run: |
