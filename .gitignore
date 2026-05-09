@@ -91,3 +91,4 @@ target/
 myenv
 
 /models/vectorizer.pkl
+/models/model.pkl

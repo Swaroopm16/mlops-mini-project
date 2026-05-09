@@ -22,12 +22,10 @@ stages:
   feature_engineering:
     cmd: python src/features/feature_engineering.py
     deps:
-    - data/interim
     - src/features/feature_engineering.py
-    params:
-    - feature_engineering.max_features
     outs:
-    - data/processed
+    - data/processed/train_bow.csv
+    - data/processed/test_bow.csv
     - models/vectorizer.pkl
 
   model_building:
