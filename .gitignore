@@ -92,3 +92,5 @@ myenv
 
 /models/vectorizer.pkl
 /models/model.pkl
+
+src/model/ex_model_evaluation.py
