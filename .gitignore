@@ -89,3 +89,5 @@ target/
 .mypy_cache/
 
 myenv
+
+/models/vectorizer.pkl

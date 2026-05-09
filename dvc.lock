@@ -37,27 +37,22 @@ stages:
   feature_engineering:
     cmd: python src/features/feature_engineering.py
     deps:
-    - path: data/interim
-      hash: md5
-      md5: 5dc0cd6aef8578eb36f1b67dc4d67723.dir
-      size: 566210
-      nfiles: 2
     - path: src/features/feature_engineering.py
       hash: md5
       md5: c1888aef256c204017522c2ce5fd36a0
       size: 3883
-    params:
-      params.yaml:
-        feature_engineering.max_features: 5000
     outs:
-    - path: data/processed
+    - path: data/processed/test_bow.csv
       hash: md5
-      md5: b8081e9dca60113474007ae7ee269c74.dir
-      size: 103818916
-      nfiles: 2
+      md5: 3ecaadd5dd83a0c284bc5842033f7b01
+      size: 31163236
+    - path: data/processed/train_bow.csv
+      hash: md5
+      md5: 4d4573f82a579f0260a750bfa1abee46
+      size: 72655680
     - path: models/vectorizer.pkl
       hash: md5
-      md5: 5605ef8a2fd45c6b228c9c7244fac463
+      md5: e7894abc96fffc4387838df28d14d02a
       size: 140802
   model_building:
     cmd: python src/model/model_building.py
