@@ -1,10 +1,16 @@
-import mlflow
+import os
 import dagshub
+import mlflow
 
-mlflow.set_tracking_uri('https://dagshub.com/Swaroopm16/mlops-mini-project.mlflow')
-dagshub.init(repo_owner='Swaroopm16', repo_name='mlops-mini-project', mlflow=True)
+dagshub.init(
+    repo_owner="Swaroopm16",
+    repo_name="mlops-mini-project",
+    mlflow=True
+)
 
+os.environ["MLFLOW_TRACKING_USERNAME"] = os.environ["DAGSHUB_USERNAME"]
+os.environ["MLFLOW_TRACKING_PASSWORD"] = os.environ["DAGSHUB_TOKEN"]
 
-with mlflow.start_run():
-  mlflow.log_param('parameter name', 'value')
-  mlflow.log_metric('metric name', 1)
+mlflow.set_tracking_uri(
+    "https://dagshub.com/Swaroopm16/mlops-mini-project.mlflow"
+)

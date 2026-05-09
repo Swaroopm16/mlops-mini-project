@@ -90,7 +90,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # ── MLflow / DagsHub setup ────────────────────────────────────────────────────
 import dagshub
-dagshub.init(repo_owner='Swaroopm16', repo_name='mlops-mini-project', mlflow=True)
+dagshub.init(repo_owner='Swaroopm16', repo_name='mlops-mini-project', )
 
 mlflow.set_tracking_uri('https://dagshub.com/Swaroopm16/mlops-mini-project.mlflow')
 mlflow.set_experiment("Logistic Regression Baseline")
