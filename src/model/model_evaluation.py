@@ -2,8 +2,6 @@ import os
 import json
 import pickle
 import logging
-
-import dagshub
 import mlflow
 import mlflow.sklearn
 import numpy as np
@@ -37,12 +35,6 @@ mlflow.set_tracking_uri(
     "https://dagshub.com/Swaroopm16/mlops-mini-project.mlflow"
 )
 
-# Initialize DagsHub
-dagshub.init(
-    repo_owner="Swaroopm16",
-    repo_name="mlops-mini-project",
-    mlflow=True,
-)
 
 # =========================================================
 # Logging Configuration
